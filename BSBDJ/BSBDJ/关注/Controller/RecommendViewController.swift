@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SVProgressHUD
 import Alamofire
 
 fileprivate let categoryCellID = "categoryCellID"

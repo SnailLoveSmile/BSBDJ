@@ -8,8 +8,7 @@
 
 import UIKit
 import Alamofire
-import MJRefresh
-import MJExtension
+
 fileprivate let cellID = "CommentCell"
 fileprivate let headerID = "headerViewIdentifier"
 class CommentViewController: UIViewController {

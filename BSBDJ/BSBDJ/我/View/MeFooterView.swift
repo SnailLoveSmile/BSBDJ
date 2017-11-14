@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MJExtension
 import Alamofire
 
 class MeFooterView: UIView {
