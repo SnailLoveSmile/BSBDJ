@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishViewController" customModule="BSBDJ" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="O5j-fu-kHc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jj-ms-ctn">
+                    <rect key="frame" x="43" y="560" width="289" height="40"/>
+                    <state key="normal" backgroundImage="shareButtonCancel">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="shareButtonCancelClick"/>
+                    <connections>
+                        <action selector="dissMissButton:" destination="-1" eventType="touchUpInside" id="Vpb-za-a2z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O5j-fu-kHc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1nO-Pd-VGV"/>
+                <constraint firstItem="O5j-fu-kHc" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3R5-X8-dG4"/>
+                <constraint firstItem="5jj-ms-ctn" firstAttribute="centerX" secondItem="O5j-fu-kHc" secondAttribute="centerX" id="TP1-3E-ldn"/>
+                <constraint firstItem="O5j-fu-kHc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="itM-Xv-sWV"/>
+                <constraint firstItem="O5j-fu-kHc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vYJ-6N-WG3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5jj-ms-ctn" secondAttribute="bottom" constant="67" id="xXH-DR-rXC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-99" y="-229"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
+    </resources>
+</document>

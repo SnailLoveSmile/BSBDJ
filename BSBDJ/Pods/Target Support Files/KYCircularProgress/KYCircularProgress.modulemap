@@ -1,0 +1,6 @@
+framework module KYCircularProgress {
+  umbrella header "KYCircularProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}
