@@ -13,7 +13,6 @@ class UserModel: NSObject {
     var sex: String = ""
     var profile_image: String = ""
 
-
     init(dict: [String: Any]) {
         username = dict["username"] as? String ?? ""
         sex = dict["sex"] as? String ?? ""

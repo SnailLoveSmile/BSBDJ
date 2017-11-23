@@ -71,7 +71,7 @@ extension RecommendViewController: UITableViewDataSource {
             if array.count > 0 {
                 cell.model = array[indexPath.row]
             }
-            //在这里校验  是否还能再继续加载避免再次发起请求
+            //在这里校验 是否还能再继续加载避免再次发起请求
             if indexPath.row == category.users.count - 1 && category.canLoadMore{
               recommendVM.getUserData(catagroy: recommendVM.categoryArray[row!], jsonDataBlock: {
                self.userTableView.reloadData()

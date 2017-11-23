@@ -17,6 +17,7 @@ class CommentViewModel: NSObject {
     func loadData(contentID: String, boolFirstLoad: Bool, finishedBlock:@escaping ()->()){
 
         if !canLoadMore {
+             finishedBlock()
             return
         }
 
@@ -32,7 +33,7 @@ class CommentViewModel: NSObject {
         if boolFirstLoad {
             parameter["hot"] = "1"
         }else{
-        page += 1
+         page += 1
          parameter["page"] = "\(page)"
          parameter["lastcid"] = newComments.last?.ID ?? ""
         }

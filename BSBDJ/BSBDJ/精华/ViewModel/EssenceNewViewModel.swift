@@ -39,7 +39,7 @@ class EssenceNewViewModel: NSObject {
                 }
                 var mmTime = ""
                 if let lastTime = dict["info"] as? [String: Any] {
-                    mmTime = (lastTime["maxtime"] as? String) ?? ""
+                    mmTime  = (lastTime["maxtime"] as? String) ?? ""
                 }
                 var data = [ContentModel]()
                 for dic in datas {

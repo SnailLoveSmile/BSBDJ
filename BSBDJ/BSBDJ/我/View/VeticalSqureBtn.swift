@@ -15,7 +15,7 @@ class VeticalSqureBtn: UIButton {
             guard let name = content?.name, let icon = content?.icon, let url = URL(string: icon) else {
                 return
             }
-              setTitleColor(UIColor.darkGray, for: .normal)
+            setTitleColor(UIColor.darkGray, for: .normal)
             setBackgroundImage(UIImage.init(named: "mainCellBackground"), for: .normal)
             addTarget(self, action: #selector(click(_:)), for: .touchUpInside)
             setTitle(name, for: .normal)

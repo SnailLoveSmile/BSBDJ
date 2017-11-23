@@ -66,8 +66,8 @@ class ContentModel: NSObject {
         name = dict["name"] as? String ?? ""
         profile_image = dict["profile_image"] as? String ?? ""
         create_time = dict["create_time"] as? String ?? ""
-      ding =  Int((dict["ding"] as? NSString ?? "0").intValue)
-      cai =  Int((dict["cai"] as? NSString ?? "0").intValue)
+       ding =  Int((dict["ding"] as? NSString ?? "0").intValue)
+       cai =  Int((dict["cai"] as? NSString ?? "0").intValue)
         repost = dict["repost"] as? Int ?? 0
         comment = Int((dict["comment"] as? NSString ?? "0").intValue)
         width = CGFloat((dict["width"] as? NSString ?? "0").floatValue)
